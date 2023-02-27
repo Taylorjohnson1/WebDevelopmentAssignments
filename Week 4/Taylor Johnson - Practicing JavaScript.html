@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/javascript.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Taylor Johnson - Practicing JavaScript_files/style.css">
+    <title>Taylor Johnson - Practicing JavaScript</title>
+</head>
+<body>
+    <h1>Form:</h1>
+    <hr>
+    
+    <form autocomplete="off">
+        <h4>First &amp; Last Name:</h4>
+
+        <label for="fname"> First Name:</label>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname">
+
+        <h4>Whats your favorite food?</h4>
+
+        <label for="ffood">Favorite Food:</label>
+        <select id="ffood" name="ffood">
+            <option>-Select One-</option>
+            <option value="pizza">Pizza</option>
+            <option value="pasta">Pasta</option>
+            <option value="burger">Burgers</option>
+            <option value="steak">Steak</option>
+        </select>
+
+        <h4>Hair Color:</h4>
+
+        <input type="radio" id="blonde" name="hair" value="Blonde">
+        <label for="blonde">Blonde</label><br>
+        <input type="radio" id="brunette" name="hair" value="Brunette">
+        <label for="brunette">Brunette</label><br>
+        <input type="radio" id="red" name="hair" value="Red">
+        <label for="red">Red</label><br>
+        <input type="radio" id="na" name="hair" value="Na">
+        <label for="na">None Of The Above</label><br>
+
+        <h4>Whats your hobby?(Choose 2)</h4>
+
+        <input type="checkbox" id="sport" name="sport" value="Sport">
+        <label for="sport">Sports</label><br>
+        <input type="checkbox" id="reading" name="reading" value="Reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="cooking" name="cooking" value="Cooking">
+        <label for="Cooking">Cooking</label><br>
+        <input type="checkbox" id="writing" name="writing" value="Writing">
+        <label for="writing">Writing</label><br>
+        <input type="checkbox" id="art" name="art" value="Art">
+        <label for="art">Art</label><br>
+        <input type="checkbox" id="na" name="na" value="na">
+        <label for="na">None Of The Above</label><br>
+
+
+        <input type="submit" value="Submit" <="" form="">
+
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</form></body></html>

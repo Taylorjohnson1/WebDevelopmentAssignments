@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/myscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h2>Form:</h2>
+    <hr>
+    <form name="myForm" onsubmit="return validateForm()">
+        <div>
+            <h4>Whats your name?</h4>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text"><br>
+        </div>
+        <div>
+            <h4>Choose an ID number between 1000-9999:</h4>
+            <label for="id">ID Number:</label>
+            <input id="id" name="id" type="text" ><br>
+        </div>
+        <div>
+            <h4>Whats todays date?</h4>
+            <label for="date">Start date:</label>
+            <input type="date" id="date" name="trip-start">
+        </div>
+        <div>
+            <h4>Whats your current occupation?</h4>
+            <label for="occupation">Occupation:</label>
+            <input id="occupation" name="occupation" type="text"><br>
+        </div>
+        <div>
+            <h4>What grade are you in?</h4>
+            <input type="radio" id="freshman" name="gradeLevel" value="freshman">
+            <label for="freshman">Freshman</label><br>
+            <input type="radio" id="sophomore" name="gradeLevel" value="sophomore">
+            <label for="sophomore">Sophomore</label><br>
+            <input type="radio" id="junior" name="gradeLevel" value="junior">
+            <label for="junior">Junior</label><br>
+            <input type="radio" id="senior" name="gradeLevel" value="senior">
+            <label for="senior">Senior</label><br>
+        </div>
+        <div>
+            <h4>Whats your major?</h4>
+            <label>Major:</label>
+            <select id="major" name="major" >
+                <option selected disabled value="">---</option>
+                <option value="accounting">Accounting</option>
+                <option value="business">Business</option>
+                <option value="computer science">Computer Science</option>
+                <option value="information technology">Information Technology</option>
+                <option value="education">Eduction</option>
+                <option value="physics">Physics</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="none">None Of The Above</option>
+            </select>
+        </div>
+        <div>
+            <h4>Whats your favorite food?</h4>
+            <label>Favorite Food:</label>
+            <select id="select1" name="select1" >
+                <option selected disabled value="">---</option>
+                <option value="pizza">Pizza</option>
+                <option value="pasta">Pasta</option>
+                <option value="burger">Burgers</option>
+                <option value="steak">Steak</option>
+            </select>
+        </div>
+        <div>
+            <h4>Whats your hair color?</h4>
+            <input type="radio" id="hair1" name="hair" value="Blonde">
+            <label for="hair1">Blonde</label><br>
+            <input type="radio" id="hair2" name="hair" value="Brunette">
+            <label for="hair2">Brunette</label><br>
+            <input type="radio" id="hair3" name="hair" value="Red">
+            <label for="hair3">Red</label><br>
+            <input type="radio" id="hair4" name="hair" value="Na">
+            <label for="hair4">None Of The Above</label><br>
+        </div>
+        <div>
+            <h4>Whats your hobby?(Choose 2)</h4>
+            <input type="checkbox" id="sports" name="sports" value="Sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="reading" name="reading" value="Reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="cooking" name="cooking" value="Cooking">
+            <label for="cooking">Cooking</label><br>
+            <input type="checkbox" id="writing" name="writing" value="Writing">
+            <label for="writing">Writing</label><br>
+            <input type="checkbox" id="art" name="art" value="Art">
+            <label for="art">Art</label><br>
+            <input type="checkbox" id="na" name="na" value="na">
+            <label for="na">None Of The Above</label><br>
+        </div>
+        <div>
+            <h4>Favorite Animal?</h4>
+            <input type="radio" id="dog" name="animal" value="dog">
+            <label for="dog">Dogs</label><br>
+            <input type="radio" id="cat" name="animal" value="cat">
+            <label for="cat">Cats</label><br>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+    </form> 
+</body>
+</html>

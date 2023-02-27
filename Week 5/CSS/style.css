@@ -1,0 +1,74 @@
+/* Universal Selector. */
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Class Heading for Headings. */
+h1 {
+    align-content: flex-start;
+    color: blue;
+}
+
+h3 {
+    align-content: flex-start;
+    color: blue;
+}
+
+.center {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+
+cite {
+    font-style: italic;
+}
+
+form {
+    color: black;
+}
+
+/* Used to Change/Design the Form. */
+.boxtype1 {
+    width: 300px;
+    height: 25px;
+    border-radius: 1px;
+    transition: .3s;
+}
+
+.boxtype1:hover {
+    border-radius: 1px;
+    background-color: gray;
+}
+
+/* Changes the button at the bottom of the Form. */
+button {
+    width: 150px;
+    height: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+}
+
+table, tr, td, th {
+    border: 1px solid;
+    padding: 5px;
+}
+
+.bcgreen {
+    background-color: green;
+}
+
+.bcyellow {
+    background-color: yellow;
+}
+
+.bcred {
+    background-color: red;
+}
+
+.center {
+    text-align: center;
+}

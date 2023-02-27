@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>Taylor Johnson - Practicing JavaScript</title>
+    <script>
+        function validateForm() {
+          let name = document.forms["myForm"]["name"].value;
+          if (name == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+          let drop = document.forms["myForm"]["select1"].value;
+          if (drop == "") {
+            alert("Must choose a favorite food");
+            return false;
+          }
+          let hair = document.forms["myForm"]["hair"].value;
+          if (hair == "") {
+            alert("Must choose your hair color");
+            return false;
+          }
+          let hobbies = document.querySelectorAll("input[type='checkbox']")
+          let numberOfHobbies = 0;
+          hobbies.forEach((hobby) => {
+            if (hobby.checked) numberOfHobbies++
+          })
+          if (numberOfHobbies < 2) {
+            alert("Must Choose 2 Hobbies")
+            return false
+          }
+        }
+    </script>
+  </head>
+  <body>
+    <h2>Form:</h2>
+    <hr>
+    <form name="myForm" onsubmit="return validateForm()">
+        <div>
+            <h4>Whats your name?</h4>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text"><br>
+        </div>
+        <div>
+            <h4>Whats your favorite food?</h4>
+            <label>Favorite Food:</label>
+            <select id="select1" name="select1" >
+                <option selected disabled value="">---</option>
+                <option value="First Choice">Pizza</option>
+                <option value="Second Choice">Pasta</option>
+                <option value="Third Choice">Burgers</option>
+                <option value="Forth Choice">Steak</option>
+            </select>
+        </div>
+        <div>
+            <h4>Hair Color:</h4>
+            <input type="radio" id="hair1" name="hair" value="Blonde">
+            <label for="hair1">Blonde</label><br>
+            <input type="radio" id="hair2" name="hair" value="Brunette">
+            <label for="hair2">Brunette</label><br>
+            <input type="radio" id="hair3" name="hair" value="Red">
+            <label for="hair3">Red</label><br>
+            <input type="radio" id="hair4" name="hair" value="Na">
+            <label for="hair4">None Of The Above</label><br>
+        </div>
+        <div>
+            <h4>Whats your hobby?(Choose 2)</h4>
+            <input type="checkbox" id="sports" name="sports" value="Sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="reading" name="reading" value="Reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="cooking" name="cooking" value="Cooking">
+            <label for="cooking">Cooking</label><br>
+            <input type="checkbox" id="writing" name="writing" value="Writing">
+            <label for="writing">Writing</label><br>
+            <input type="checkbox" id="art" name="art" value="Art">
+            <label for="art">Art</label><br>
+            <input type="checkbox" id="na" name="na" value="na">
+            <label for="na">None Of The Above</label><br>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+    </form> 
+  </body>
+</html>
